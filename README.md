@@ -30,3 +30,7 @@ metadata:
 spec:
   handle: k3s-test
 ```
+
+## Notifications Setup
+
+We also added a commented setup for notifications routing in `services/notifications.yaml`, it expects you to have already created a notification sink named `slack`, which can be done in the notifications tab of the console UI most easily.
