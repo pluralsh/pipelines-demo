@@ -5,6 +5,7 @@ metadata:
 spec:
   name: podinfo-pipeline
   namespace: podinfo-pipeline
+  templated: false
   git:
     folder: pipeline
     ref: main
