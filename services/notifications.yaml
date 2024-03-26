@@ -1,0 +1,17 @@
+# apiVersion: deployments.plural.sh/v1alpha1
+# kind: NotificationRouter
+# metadata:
+#   name: firehose
+# spec:
+#   events: ["*"]
+#   sinks:
+#   - name: slack
+#     namespace: infra
+# ---
+# apiVersion: deployments.plural.sh/v1alpha1
+# kind: NotificationSink
+# metadata:
+#   name: slack
+# spec:
+#   type: SLACK
+#   name: slack
