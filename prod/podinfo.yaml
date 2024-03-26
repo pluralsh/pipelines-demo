@@ -15,7 +15,7 @@ spec:
   helm:
     values:
       image:
-        tag: 6.2.0 # VERSION
+        tag: 6.5.3 # VERSION
   clusterRef:
     kind: Cluster
     name: k3s-prod # change this to the appropriate name for your main prod cluster
