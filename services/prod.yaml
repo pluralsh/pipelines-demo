@@ -4,7 +4,7 @@ metadata:
   name: prod
 spec:
   name: pipeline-prod
-  namespace: podinfo-pipeline
+  namespace: prod
   git:
     folder: prod
     ref: main

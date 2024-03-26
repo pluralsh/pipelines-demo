@@ -4,7 +4,7 @@ metadata:
   name: dev
 spec:
   name: pipeline-dev
-  namespace: prodinfo-pipeline
+  namespace: dev
   git:
     folder: dev
     ref: main

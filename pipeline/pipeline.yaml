@@ -11,7 +11,7 @@ spec:
             namespace: dev
           criteria:
             prAutomationRef:
-              name: podinfo-pipeline
+              name: podinfo-pipeline-automation
     - name: prod
       services:
         - serviceRef:
@@ -19,7 +19,7 @@ spec:
             namespace: prod
           criteria:
             prAutomationRef:
-              name: podinfo-pipeline
+              name: podinfo-pipeline-automation
   edges:
     - from: dev
       to: prod
