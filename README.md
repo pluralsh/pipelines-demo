@@ -31,6 +31,24 @@ spec:
   handle: k3s-test
 ```
 
+We've already created those in `services/clusters.yaml` but you're free to rename or remove them.
+
+## Setting up a test fleet
+
+One easy way to test this out is to use a few local k3d clusters. k3d is a version of k3s meant to run entirely in docker, and is a bit more feature-rich than KIND.  The process to set it up is simple, you'll first want to install k3d here: https://k3d.io/v5.6.0/#releases, then we've added a small make file with targets to create a cluster and install an agent easily.  You'll first want to run:
+
+```sh
+make login
+```
+
+That will log in your Plural CLI to the console (go to `/profile/access-tokens` to create a token).  Then your can run:
+
+```sh
+make setup-k3s
+```
+
+To create a new named k3s cluster.  If for whatever reason you fail to install the agent properly, you can always redrive the installation with `plural cd clusters reinstall {cluster-name}`
+
 ## Notifications Setup
 
 We also added a commented setup for notifications routing in `services/notifications.yaml`, it expects you to have already created a notification sink named `slack`, which can be done in the notifications tab of the console UI most easily.
